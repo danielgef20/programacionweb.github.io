@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<a href="../../index.html"><img src = "../../Imagenes/home.png" width="65" height="50" alt = "Inicio"></a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10.16</title>
+
+    <link rel="stylesheet" href="/CSS3/css/baseStyle.css" type="text/css">
+
+    <script src="Ejercicio 16.js"></script>
+
+</head>
+<body>
+    <div class="contenido">
+        <h3>
+            (La criba de Eratóstenes) Un número primo es cualquier entero mayor que 1, divisible sólo por sí mismo y por el número 1. La Criba de Eratóstenes es un método para encontrar números primos. Opera de la siguiente manera: <br><br>
+            a) Cree un arreglo con todos los elementos inicializados en 1 (true). Los elementos del arreglo con índices primos permanecerán como 1. Cualquier otro elemento del arreglo eventualmente cambiará a 0. <br>
+            b) Establezca los primeros dos elementos en cero, ya que 0 y 1 no son primos. Empezando con el índice 2 del arreglo, cada vez que encuentre un elemento del arreglo cuyo valor sea 1, itere a través del resto del arreglo y asigne cero a todo elemento cuyo índice sea múltiplo del índice del elemento que tiene el valor 1. Para el índice 2 del arreglo, todos los elementos más allá del elemento 2 en el arreglo que sean múltiplos de 2 se establecerán en cero (los índices 4, 6, 8, 10, etcétera); para el índice 3 del arreglo, todos los elementos más allá del elemento 3 en el arreglo que sean múltiplos de 3 se establecerán en cero (los índices 6, 9, 12, 15, etcétera); y así en lo sucesivo. <br><br>
+            Cuando este proceso termine, los elementos del arreglo que aún sean 1 indicarán que el índice es un número primo. Entonces podrá imprimir estos índices. Escriba una secuencia de comandos que utilice un arreglo de 1000 elementos para determinar e imprimir los números primos entre 1 y 999. Ignore el elemento 0 del arreglo.
+        </h3>
+        <div class="boxContent">
+            <p id="resultados"></p>
+        </div>
+    </div>
+</body>
+</html>

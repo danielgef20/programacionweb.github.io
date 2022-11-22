@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<a href="../../index.html"><img src = "../../Imagenes/home.png" width="65" height="50" alt = "Inicio"></a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10.17</title>
+
+    <link rel="stylesheet" href="/CSS3/css/baseStyle.css" type="text/css">
+
+    <script src="Ejercicio 17.js"></script>
+
+    <style type="text/css">
+        td{
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="contenido">
+        <h3>
+            <em>(Simulación: La tortuga y la liebre)</em> En este problema, usted recreará uno de los momentos realmente grandiosos en la historia, a saber la clásica carrera de la tortuga y la liebre. Utilizará la generación de números aleatorios para desarrollar una Simulación de este memorable suceso. <br>
+            Nuestros competidores empezarán la carrera en la posición 1 de 70 posiciones. Cada posición representa a una posible posición a lo largo del curso de la carrera. La línea de meta se encuentra en la posición 70. El primer competidor en llegar a la posición 70 o más allá recibirá una cubeta llena con zanahorias y lechuga frescas. El recorrido se abre paso hasta la cima de una resbalosa montaña, por lo que en ocasiones los competidores pierden terreno. <br>
+            Un reloj hace tictac una vez por segundo. Con cada tic del reloj, su secuencia de comandos debe ajustar la posición de los animales de acuerdo con las reglas de la siguiente figura. <br>
+            <img src="../../Imagenes/10-17.png" alt="Imagen del ejercicio 10.17 parte 1"><br>
+            <img src="../../Imagenes/10-17-2.png" alt="Imagen del ejercicio 10.17 parte 2"><br>
+            Notas: <br>
+            a) Imprimir <em>PUM!!! Y ARRANCA!!!</em> al empezar la carrera. <br>
+            b) Colocar H en las posiciones de la liebre y T en las posiciones de la tortuga. <br>
+            c) Cuando la liebre y la tortuga estén en la misma posición (durante un mismo ciclo), colocar <em>OUCH!!!</em> en la posición de la liebre (representando que la tortuga mordió a la liebre). <br>
+            d) Si la tortuga gana imprimir <em>LA TORTUGA CANA!!! YAY!!!</em>. Si la liebre gana <em>La liebre gana. Que mal.</em> En caso de empate <em>Es un empate.</em>.
+        </h3>
+        <div class="boxContent">
+            <input type="button" value="Empezar" id="ejecutar">
+            <p id="pista"></p>
+            <p id="mensajes"></p>
+        </div>
+    </div>
+</body>
+</html>

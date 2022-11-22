@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<a href="../../index.html"><img src = "../../Imagenes/home.png" width="65" height="50" alt = "Inicio"></a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10.9</title>
+
+    <link rel="stylesheet" href="/CSS3/css/baseStyle.css" type="text/css">
+
+    <style type="text/css">
+        table{ text-align: center; }
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 200px;
+        }
+        thead{ background-color: black; color: white; }
+        td{ background-color: rgb(201, 201, 201); }
+        
+    </style>
+
+</head>
+<body>
+    <div class="contenido">
+        <h3>
+            Considere un arreglo de dos por tres que almacena enteros.
+        </h3>
+        <ol class="boxContent" type="a">
+            <div class="oracion">
+                <li>
+                    Escriba una instrucción para declarar y crear el arreglo t.
+                </li>
+                <p class="respuesta">
+                    <b>var</b> t = new Array( new Array(3), new Array(3) );
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    ¿Cuántas filas tiene t?
+                </li>
+                <p class="respuesta">
+                    2
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    ¿Cuántas columnas tiene t?
+                </li>
+                <p class="respuesta">
+                    3
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    ¿Cuántos elementos tiene t?
+                </li>
+                <p class="respuesta">
+                    6
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    Escriba los nombres de todos los elementos en la fila 1 de t.
+                </li>
+                <p class="respuesta">
+                    t[0][0], t[0][1], t[0][2].
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    Escriba los nombres de todos los elementos en la tercera columna de t.
+                </li>
+                <p class="respuesta">
+                    t[0][2], t[1][2].
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    Escriba una sola instrucción para establecer el elemento de t en la fila 1 y la columna 2 en cero.
+                </li>
+                <p class="respuesta">
+                    t[0][1] = 0;
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    Escriba una serie de instrucciones para inicializar cada elemento de t en cero.
+                </li>
+                <p class="respuesta">
+                    t[0][0] = 0; <br>
+                    t[0][1] = 0; <br>
+                    t[0][2] = 0; <br>
+                    t[1][0] = 0; <br>
+                    t[1][1] = 0; <br>
+                    t[1][2] = 0; <br>
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    Escriba una instrucción <em>for</em> anidada para inicializar cada elemento de t en cero.
+                </li>
+                <p class="respuesta">
+                    <b>for</b>(var x in t){ <br>
+                    &emsp;<b>for</b>(var y in t[x]){ <br>
+                    &emsp;&emsp;t[x][y] = 0; <br>
+                    &emsp;} <br>
+                    }
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    Escriba una serie de instrucciones para determinar e imprimir el valor más pequeño en el arreglo t.
+                </li>
+                <p class="respuesta">
+                    document.writeln(Math.min(...t));
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    Escriba una instrucción sin repetición para mostrar los elementos de la primera fila de t.
+                </li>
+                <p class="respuesta">
+                    document.writeln(t[0][0]); <br>
+                    document.writeln(t[0][1]); <br>
+                    document.writeln(t[0][2]); <br>
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    Escriba una serie de instrucciones para imprimir el arreglo t en un formato tabular ordenado. Liste los índices de columnas como encabezados a lo largo de la parte superior y liste los índices de fila en la parte izquierda de cada fila.
+                </li>
+                <p class="respuesta">
+                    
+                    var t = [ <br>
+                    &emsp;[1,2,3], <br>
+                    &emsp;[4,5,6] <br>
+                    ]; <br>
+                    document.writeln("&lt;table>&lt;thead>&lt;th>&lt;/th>&lt;th>0&lt;/th>&lt;th>1&lt;/th>&lt;th>2&lt;/th>&lt;tbody>"); <br>
+                    for(var x in t){ <br>
+                    &emsp;document.writeln("&lt;tr>&lt;td>" + x + "&lt;/td>"); <br>
+                    &emsp;for(var y in t[x]){ <br>
+                    &emsp;&emsp;document.writeln("&lt;td>" + t[x][y] + "&lt;/td>"); <br>
+                    &emsp;} <br>
+                    } <br>
+                    document.writeln("&lt;/tbody>&lt;/table>"); <br>
+
+                </p>
+            </div>
+            <script>
+                var t = [
+                    [1,2,3],
+                    [4,5,6]
+                ];
+                document.writeln("<table><thead><th></th><th>0</th><th>1</th><th>2</th><tbody>");
+                for(var x in t){
+                    document.writeln("<tr><td>" + x + "</td>");
+                    for(var y in t[x]){
+                        document.writeln("<td>" + t[x][y] + "</td>");
+                    }
+                }
+                document.writeln("</tbody></table>");
+            </script>
+        </ol>
+    </div>
+</body>
+</html>

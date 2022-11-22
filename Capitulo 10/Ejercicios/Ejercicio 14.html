@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<a href="../../index.html"><img src = "../../Imagenes/home.png" width="65" height="50" alt = "Inicio"></a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10.14</title>
+
+    <link rel="stylesheet" href="/CSS3/css/baseStyle.css" type="text/css">
+
+    <script src="Ejercicio 14.js"></script>
+
+    <style type="text/css">
+        td{
+            border: 1px solid black;
+        }
+        .pestana{
+            color: black;
+            min-width:20px;
+            border: 0px;
+            font-weight: bold;
+        }
+
+        thead .pestana{
+            border: 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="contenido">
+        <h3>
+            Escriba una secuencia de comandos para simular el tiro de dos dados. La secuencia debe usar <em>Math.random</em> para tirar el primer dado y usar esa función de nuevo para tirar el segundo dado. Después deberá calcularse la suma de los dos valores [nota: como cada dado puede mostrar un valor entero de 1 a 6, la suma de los valores variará de 2 a 12, en donde 7 será la suma más frecuente y tanto 2 como 12 serán las sumas menos frecuentes. La figura siguiente muestra las 36 combinaciones posibles de los dos dados. Su programa deberá tirar los dados 36,000 veces. Use un arreglo bidimensional para calcular el número de veces que aparezca cada posible suma. Muestre los resultados en una tabla de HTML5. Determine además si los totales son razonables (por ejemplo, hay seis formas de tirar un 7 por lo que cerca de 1/6 parte de todos los tiros deberán ser 7)]. <br> <br>
+            <img src="../../Imagenes/10-14.png" alt="Imagen del ejercicio 10.14">
+        </h3>
+        <div class="boxContent">
+            <button id="lanzar">Lanzar</button>
+            <p id="resultado"></p>
+            <p id="totales"></p>
+        </div>
+    </div>
+</body>
+</html>

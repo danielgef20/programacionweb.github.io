@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<a href="../../index.html"><img src = "../../Imagenes/home.png" width="65" height="50" alt = "Inicio"></a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10.15</title>
+
+    <link rel="stylesheet" href="/CSS3/css/baseStyle.css" type="text/css">
+
+    <script src="Ejercicio 15.js"></script>
+
+    <style type="text/css">
+        td{
+            border: 1px solid black;
+        }
+        .lateral { border: 1px solid rgb(174, 248, 236); font-weight: bold; }
+    </style>
+
+</head>
+<body>
+    <div class="contenido">
+        <h3>
+            (Gráficos de tortuga) El lenguaje Logo, que es popular entre usuarios de computadora de corta edad, hizo famoso el concepto de los gráficos de tortuga. Imagine una tortuga mecánica que camina alrededor del cuarto bajo control de un programa de JavaScript. La tortuga sostiene una pluma en una de dos posiciones, arriba y abajo. Cuando la pluma está abajo, la tortuga traza figuras a medida que se desplaza ; cuando la pluma está arriba la tortuga se mueve libremente sin escribir nada. En este problema usted simulará la operación de la tortuga y creará un bloc de dibujo computarizado. <br>
+            Use un arreglo de 20 por 20 llamado piso que esté inicializado en ceros. Lea los comandos de un arreglo que los contenga. Rastree la posición actual de la tortuga en todo momento y si la pluma está arriba o abajo en un momento dado. Suponga que la tortuga siempre empieza en la posición (0, 0) del piso, con su pluma arriba. El conjunto de comandos de tortuga que deberá procesar su secuencia de comandos se encuentra en la siguiente figura. <br><br>
+            <img src="../../Imagenes/10-15.png" alt="Imagen del ejercicio 10.15"> <br>
+            A medida que la tortuga se desplace con la pluma abajo, establezca los elementos apropiados del arreglo piso en 1. Al proporcionar el comando 6(imprimir), muestre un asterísco o cualquier otro carácter de su elección cada vez que haya un 1 en el arreglo. Siempre que haya un cero, muestre un espacio en blanco.
+        </h3>
+        <div class="boxContent">
+            <p>
+                <b>Nota:</b><br>
+                Posición inicial: (0,0) <br>
+                Está mirando hacia: Derecha.
+            </p>
+            <form action="#">
+                Pluma: <br>
+                <label>
+                    <input type="radio" name="setPluma" value="1" id="pluma1" checked>
+                    Arriba
+                </label>
+                <label>
+                    <input type="radio" name="setPluma" value="2" id="pluma2">
+                    Abajo
+                </label><br>
+                <input type="button" value="Agregar" id="agregarPluma">
+                <br><br>
+                
+                Girar: <br>
+                <label>
+                    <input type="radio" name="setGiro" value="3" id="giro1" checked>
+                    Derecha
+                </label>
+                <label>
+                    <input type="radio" name="setGiro" value="4" id="giro2">
+                    Izquierda
+                </label> <br>
+                <input type="button" value="Agregar" id="agregarGiro">
+                <br><br>
+
+                Avanzar:
+                <input type="number" name="Avanzar" id="campoAvanzar" style="width: 50px;" value="0">
+                <input type="button" value="Agregar" id="avanzarEspacios">
+                <br><br>
+
+                Imprimir:
+                <input type="button" value="Agregar" id="imprimir">
+                <br><br>
+
+                Final:
+                <input type="button" value="Agregar" id="final"> <br><br>
+
+                <input type="button" value="Ejecutar comandos" id="ejecutar">
+
+                <input type="button" value="Reiniciar" id="reiniciar">
+            </form>
+
+            
+            <p id="listaComandos"></p>
+            <div style="display:flex;float:left;">
+                <p id="resultado"></p>
+            </div>
+            <span>
+                <br><br>
+                <table>
+                    <tbody>
+                        <script>
+                            for(var i = 0; i < 20; i++){
+                                document.writeln("<tr><td class='lateral'>" + i + "</td></tr>");
+                            }
+                        </script>
+                    </tbody>
+                </table>
+            </span>
+
+            <p id="finDibujo"></p>
+        </div>
+    </div>
+    <br><br>
+</body>
+</html>

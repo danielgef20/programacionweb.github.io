@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<a href="../../index.html"><img src = "../../Imagenes/home.png" width="65" height="50" alt = "Inicio"></a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10.8</title>
+
+    <link rel="stylesheet" href="/CSS3/css/baseStyle.css" type="text/css">
+
+</head>
+<body>
+    <div class="contenido">
+        <h3>
+            Escriba instrucciones de JavaScript para realizar cada una de las siguientes tareas:
+        </h3>
+        <ol class="boxContent" type="a">
+            <div class="oracion">
+                <li>
+                    Mostrar el valor del séptimo elemento del arreglo f.
+                </li>
+                <p class="respuesta">
+                    <strong style="color:red;">document.writeln(f[6]);</strong>
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    Inicializar cada uno de los cinco elementos del arreglo unidimensional g en 8.
+                </li>
+                <p class="respuesta">
+                    <strong style="color:red;">var g = [8,8,8,8,8];</strong>
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    Calcular el total de los elementos del arreglo c, que contiene 100 elementos numéricos.
+                </li>
+                <p class="respuesta">
+                    var total = 0; <br>
+                    for ( var a in c ){ <br>
+                    &emsp;total += c[a]; <br>
+                    }
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    Copiar el arreglo a de 11 elementos en la primera porción del arreglo b, que contiene 34 elementos.
+                </li>
+                <p class="respuesta">
+                    for( var x in a ){ <br>
+                    &emsp;b[x] = a[x]; <br>
+                    }
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    Determinar e imprimir el valor más pequeño y el más grande contenido en el arreglo w de 99 elementos de punto flotante.
+                </li>
+                <p class="respuesta">
+                    <strong style="color:red;">document.writeln(Math.min(...w));<br>
+                    document.writeln(Math.max(...w));</strong>
+                </p>
+            </div>
+        </ol>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<a href="../../index.html"><img src = "../../Imagenes/home.png" width="65" height="50" alt = "Inicio"></a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10.4</title>
+
+    <link rel="stylesheet" href="/CSS3/css/baseStyle.css" type="text/css">
+
+</head>
+<body>
+
+    <div class="contenido">
+        <h3>
+            Escribir instrucciones de JavaScript (con respecto al arrreglo tabla) para realizar cada una de las siguientes tareas:
+        </h3>
+        <ol class="boxContent" type="a">
+            <div class="oracion">
+                <li>
+                    Declarar y crear el arreglo con tres filas y tres columnas.
+                </li>
+                <p class="respuesta">
+                    <b>var</b> arreglo = [ <br>
+                    &emsp;[0, 0, 0], <br>
+                    &emsp;[0, 0, 0], <br>
+                    &emsp;[0, 0, 0] <br>
+                    ];
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    Almacenar el número total de elementos en la variable <em>totalElementos</em>.
+                </li>
+                <p class="respuesta">
+                    <b>var</b> totalElementos = arreglo.length * 3;
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    Usar una instrucción for...in para inicializar cada elemento del arreglo con la suma de sus índices de fila y de columna. Suponga que las variables x y y declaran como variables de control.
+                </li>
+                <p class="respuesta">
+                    <b>for</b> ( <b>var</b> x <b>in</b> arreglo ){ <br>
+                    &emsp;<b>for</b> ( <b>var</b> y <b>in</b> arreglo[x] ){<br>
+                    &emsp;&emsp;arreglo[x][y] = x + y; <br>
+                    &emsp;} <br>
+                    }
+                </p>
+            </div>
+        </ol>
+    </div>
+</body>
+</html>

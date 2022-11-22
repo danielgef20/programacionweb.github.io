@@ -1,0 +1,79 @@
+.headerP {
+    text-align: center;
+    text-shadow: -4px 4px 6px rgb(18, 90, 0);
+    font-size: xx-large;
+    background-color: darkcyan;
+    padding: 10px;
+}
+.nombre {
+    color: black;
+    background-color: transparent;
+    font-size: large;
+    font-family: cursive;
+    text-indent: 0em;
+    margin: 0.8em;
+    text-align: center;
+    border: 0px;
+}
+.contenido {
+    padding-left: 10%;
+    padding-right: 10%
+}
+header.headerP a {
+    background-color: transparent;
+}
+button {
+    padding: 5px;
+    color: white;
+    background-color: black;
+    font-size: 12pt;
+    border-radius: 10px;
+
+    /*  */
+    -webkit-transition: -webkit-transform 1.5s;
+    -moz-transition: -webkit-transform 1.5s;
+    -o-transition: -webkit-transform 1.5s;
+    transition: -webkit-transform 1.5s;
+}
+button:hover{
+    background-color: grey;
+    color: black;
+
+    /*  */
+    -webkit-transform: scale(1.25, 1.25);
+    -moz-transform: scale(1.25, 1.25);
+    -o-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+}
+body { margin:auto; }
+
+.respAzul {
+    color: blue;
+    text-decoration: underline;
+    font-style: italic;
+}
+.oracion { font-size: 15pt; }
+.respuesta { 
+    font-size: 12pt; 
+    /*  */
+    -webkit-transition: -webkit-transform 1.5s;
+    -moz-transition: -webkit-transform 1.5s;
+    -o-transition: -webkit-transform 1.5s;
+    transition: -webkit-transform 1.5s;
+}
+.oracion:hover p.respuesta:last-child {
+    /*  */
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+}
+.verdadero { color: green; font-style: italic; }
+.falso { color: red; font-style: italic; }
+
+h3 {
+    text-align: center;
+    background-color: rgb(241, 230, 216);
+    border-radius: 10px;
+    padding: 10px;
+}

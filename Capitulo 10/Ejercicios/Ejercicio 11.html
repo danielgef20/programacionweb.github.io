@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<a href="../../index.html"><img src = "../../Imagenes/home.png" width="65" height="50" alt = "Inicio"></a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10.11</title>
+
+    <link rel="stylesheet" href="/CSS3/css/baseStyle.css" type="text/css">
+
+</head>
+<body>
+    <div class="contenido">
+        <h3>
+            Escriba instrucciones que realicen operaciones para un arreglo unidimensional:
+        </h3>
+        <ol class="boxContent" type="a">
+            <div class="oracion">
+                <li>
+                    Establecer los 10 elementos del arreglo <em>cuentas</em> en ceros.
+                </li>
+                <p class="respuesta">
+                    for(var c in cuentas){ <br>
+                    &emsp;cuentas[c] = 0; <br>
+                    }
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    Sumar 1 a cada uno de los 15 elementos del arreglo <em>bono</em>.
+                </li>
+                <p class="respuesta">
+                    for(var b in bono){ <br>
+                    &emsp;bono[b] ++; <br>
+                    }
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    Mostrar los cinco valores del arreglo <em>mejoresPuntuaciones</em>, separado por espacios.
+                </li>
+                <p class="respuesta">
+                    document.writeln("&lt;p>"); <br>
+                    for(var m in mejoresPuntuaciones){ <br>
+                    &emsp;document.writeln(mejoresPuntuaciones[m] + " "); <br>
+                    } <br>
+                    document.writeln("&lt;/p>"); <br>
+                </p>
+            </div>
+        </ol>
+    </div>
+</body>
+</html>
